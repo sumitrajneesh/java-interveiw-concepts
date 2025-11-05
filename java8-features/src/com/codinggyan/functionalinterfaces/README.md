@@ -12,3 +12,11 @@ Method	T get() — returns an instance/value when invoked.
 Common Use Cases	Lazy loading, default/fallback values, data generation, object factory pattern.
 Difference from Consumer/Function	Consumer takes input, Function takes input and returns output, Supplier just returns output.
 
+🧠 Explanation
+Concept	Description
+Function<T, R>	Represents a function that accepts one argument (T) and produces a result (R).
+Method	R apply(T t) — applies the function to the argument and returns a result.
+andThen()	Executes this function, then applies another function on the result.
+compose()	Applies another function first, then this one.
+identity()	Returns a function that always returns its input (useful in collectors).
+Common Use Case	Transforming data using Stream.map(), chaining transformations.
